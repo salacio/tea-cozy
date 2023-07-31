@@ -48,32 +48,26 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
+  opacity: 0.9;
 }
 #mission div{
   background-color: black;
   width: 100%;
   text-align: center;
 }
-/* #monthly { */
-/*   flex-wrap: wrap; */
-/* } */
-/* #monthly div { */
-/*   display: flex; */
-/* } */
-#monthly {
+.monthly {
   max-width: 1200px;
+  opacity: 0.9;
 }
 .center {
   text-align: center;
-  justify-content: center;
-  align-items: center;
 }
 .images {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 }
-#monthly img {
+.monthly img {
   width: 300px;
 }
 #monthly figcaption {
@@ -84,4 +78,44 @@ main {
   background-image: url('./img-locations-background.jpg');
   height: 500px;
   width: 1200px;
+  /* display: flex; */
+  /* justify-content: center; */
+  /* align-items: center; */
+}
+#locations h2 {
+  text-align: center;
+}
+.address-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.address {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: center;
+  width: 300px;
+  height: 300px;
+  opacity: 1;
+  margin: auto 20px;
+  line-height: 50px;
+  box-sizing: border-box;
+  border: solid red 10px;
+}
+.address p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  border: solid red 1px;
+  width: 100%;
+  margin: 0;
+}
+.address > h3 {
+  display: flex;
+  border: solid red 1px;
+  align-items: start;
 }
