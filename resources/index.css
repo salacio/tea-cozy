@@ -54,22 +54,14 @@ main {
   width: 100%;
   text-align: center;
 }
+/* #monthly { */
+/*   flex-wrap: wrap; */
+/* } */
+/* #monthly div { */
+/*   display: flex; */
+/* } */
 #monthly {
-  align-items: start;
-  justify-content: start;
-  min-width: 1000px;
-  display: flex;
-  flex-wrap: wrap;
-}
-.monthly h2 {
-  display: flex;
-  flex-wrap: nowrap;
-}
-.monthly {
-  justify-content: start;
-}
-#monthly div {
-  display: flex;
+  max-width: 1200px;
 }
 .center {
   text-align: center;
@@ -87,4 +79,9 @@ main {
 #monthly figcaption {
   margin-top: 10px;
   text-align: center;
+}
+#locations {
+  background-image: url('./img-locations-background.jpg');
+  height: 500px;
+  width: 1200px;
 }
