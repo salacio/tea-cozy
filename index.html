@@ -1,96 +1,112 @@
 <!doctype html>
-<html lang="en">
+<html class="w-screen h-screen" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, intial-scale=1.0" />
+    <title>Tea Cozy</title>
+    <link rel="stylesheet" href="./dist/output.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, intial-scale=1.0" />
-  <title>Tea Cozy</title>
-  <link rel="stylesheet" href="./dist/output.css" />
-</head>
-
-<body class="bg-black opacity-90 text-seashell font-helvetica text-[22px]">
-  <header class="flex fixed z-10 justify-between items-center w-screen h-[69px] border-b-seashell border-b-[1px]">
-    <img class="h-[50px] ml-[10px]" src="./src/img-tea-cozy-logo.png" />
-    <nav>
-      <ul class="inline-flex pr-5 underline">
-        <li class="mx-3"><a href="#mission">Mission</a></li>
-        <li class="mx-3"><a href="#monthly">Featured Tea</a></li>
-        <li class="mx-3"><a href="#locations">Locations</a></li>
-      </ul>
-    </nav>
-  </header>
-  <main class="inline-flex overflow-hidden relative z-0 flex-col items-center w-screen top-[69px]">
-    <section class="flex justify-center items-center bg-mission w-[1200px] h-[700px]" id="mission">
-      <div class="w-full leading-10 text-center bg-black">
-        <h2 class="my-4 text-5xl">Our Mission</h2>
-        <h4 class="mb-3 text-2xl">
-          Handpicked, Artisanally Curated, Free Range, Sustainable, Small
-          Branch, Fair Trade, Organic Tea
-        </h4>
-      </div>
-    </section>
-    <span id="monthly" class="invisible h-20"></span>
-    <section class="flex-row justify-center w-[1000px]">
-      <div class="text-center">
-        <h2 class="my-4 text-5xl">Tea of the Month</h2>
-        <h4 class="mb-3 text-2xl">What's Steeping at the Tea Cozy?</h4>
-      </div>
-      <div class="flex flex-wrap items-center place-content-evenly my-5 text-center">
-        <figure class="my-6">
-          <img class="w-[300px] h-[200px]" src="./src/img-berryblitz.jpg" />
-          <figcaption>Fall Berry Blitz Tea</figcaption>
-        </figure>
-        <figure class="my-6">
-          <img class="w-[300px] h-[200px]" src="./src/img-spiced-rum.jpg" />
-          <figcaption>Spiced Rum Tea</figcaption>
-        </figure>
-        <figure class="my-6">
-          <img class="w-[300px] h-[200px]" src="./src/img-donut.jpg" />
-          <figcaption>Seasonal Donuts</figcaption>
-        </figure>
-        <figure class="my-6">
-          <img class="w-[300px] h-[200px]" src="./src/img-myrtle-ave.jpg" />
-          <figcaption>Myrtle Ave Tea</figcaption>
-        </figure>
-        <figure class="my-6">
-          <img class="w-[300px] h-[200px]" src="./src/img-bedford-bizarre.jpg" />
-          <figcaption>Bedford Bizarre Tea</figcaption>
-        </figure>
-      </div>
-    </section>
-    <span id="locations" class="invisible h-20"></span>
-    <section class="flex flex-col place-content-evenly h-auto text-center bg-cover bg-locations w-[1200px]">
-      <h2 class="text-5xl">Locations</h2>
-      <div class="flex flex-row place-content-evenly">
-        <div class="flex flex-col place-content-evenly bg-black w-[300px] h-[300px]">
-          <h3 class="text-4xl">Downtown</h3>
-          <p>384 West 4th st</p>
-          <p>Suite 108</p>
-          <p>Portland, Maine</p>
+  <body class="text-xl bg-black opacity-90 text-seashell font-helvetica">
+    <header
+      class="flex fixed z-10 justify-between items-center w-screen h-16 bg-black border-b-2 border-b-seashell"
+    >
+      <img class="ml-3 h-12" src="./src/img-tea-cozy-logo.png" />
+      <nav>
+        <ul class="inline-flex pr-5 underline">
+          <li class="mx-3"><a href="#mission">Mission</a></li>
+          <li class="mx-3"><a href="#monthly">Featured Tea</a></li>
+          <li class="mx-3"><a href="#locations">Locations</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="inline-flex relative top-16 flex-col items-center w-screen">
+      <section
+        class="flex justify-center items-center bg-cover bg-mission"
+        id="mission"
+      >
+        <div class="my-72 w-full leading-10 text-center bg-black">
+          <h2 class="my-4 text-5xl">Our Mission</h2>
+          <h4 class="mb-3 text-xl">
+            Handpicked, Artisanally Curated, Free Range, Sustainable, Small
+            Branch, Fair Trade, Organic Tea
+          </h4>
         </div>
-        <div class="flex flex-col place-content-evenly bg-black w-[300px] h-[300px]">
-          <h3 class="text-4xl">East Bayside</h3>
-          <p>3433 Phisherman's Avenue</p>
-          <p>(Northwest Corner)</p>
-          <p>Portland, Maine</p>
+      </section>
+      <span id="monthly" class="invisible h-20"></span>
+      <section class="flex-row justify-center w-[1000px]">
+        <div class="text-center">
+          <h2 class="my-4 text-5xl">Tea of the Month</h2>
+          <h4 class="mb-3 text-2xl">What's Steeping at the Tea Cozy?</h4>
         </div>
-        <div class="flex flex-col place-content-evenly bg-black w-[300px] h-[300px]">
-          <h3 class="text-4xl">Oakdale</h3>
-          <p>515 Crescent Avenue</p>
-          <p>Second Floor</p>
-          <p>Portland, Maine</p>
+        <div
+          class="flex flex-wrap items-center place-content-evenly my-5 text-center"
+        >
+          <figure class="my-6">
+            <img class="w-[300px] h-[200px]" src="./src/img-berryblitz.jpg" />
+            <figcaption>Fall Berry Blitz Tea</figcaption>
+          </figure>
+          <figure class="my-6">
+            <img class="w-[300px] h-[200px]" src="./src/img-spiced-rum.jpg" />
+            <figcaption>Spiced Rum Tea</figcaption>
+          </figure>
+          <figure class="my-6">
+            <img class="w-[300px] h-[200px]" src="./src/img-donut.jpg" />
+            <figcaption>Seasonal Donuts</figcaption>
+          </figure>
+          <figure class="my-6">
+            <img class="w-[300px] h-[200px]" src="./src/img-myrtle-ave.jpg" />
+            <figcaption>Myrtle Ave Tea</figcaption>
+          </figure>
+          <figure class="my-6">
+            <img
+              class="w-[300px] h-[200px]"
+              src="./src/img-bedford-bizarre.jpg"
+            />
+            <figcaption>Bedford Bizarre Tea</figcaption>
+          </figure>
         </div>
-      </div>
-    </section>
-    <section class="flex flex-col place-content-evenly text-center h-[200px]">
-      <h2 class="text-5xl">The Tea Cozy</h2>
-      <h5 class="text-2xl">contact@theteacozy.com</h5>
-      <h5 class="text-2xl">917-555-8904</h5>
-    </section>
-  </main>
-  <footer class="relative top-14 p-[20px]">
-    copyright The Tea Cozy 2017
-  </footer>
-</body>
-
+      </section>
+      <span id="locations" class="invisible h-20"></span>
+      <section
+        class="flex flex-col place-content-evenly h-auto text-center bg-cover bg-locations w-[1200px]"
+      >
+        <h2 class="text-5xl">Locations</h2>
+        <div class="flex flex-row place-content-evenly">
+          <div
+            class="flex flex-col place-content-evenly bg-black w-[300px] h-[300px]"
+          >
+            <h3 class="text-4xl">Downtown</h3>
+            <p>384 West 4th st</p>
+            <p>Suite 108</p>
+            <p>Portland, Maine</p>
+          </div>
+          <div
+            class="flex flex-col place-content-evenly bg-black w-[300px] h-[300px]"
+          >
+            <h3 class="text-4xl">East Bayside</h3>
+            <p>3433 Phisherman's Avenue</p>
+            <p>(Northwest Corner)</p>
+            <p>Portland, Maine</p>
+          </div>
+          <div
+            class="flex flex-col place-content-evenly bg-black w-[300px] h-[300px]"
+          >
+            <h3 class="text-4xl">Oakdale</h3>
+            <p>515 Crescent Avenue</p>
+            <p>Second Floor</p>
+            <p>Portland, Maine</p>
+          </div>
+        </div>
+      </section>
+      <section class="flex flex-col place-content-evenly text-center h-[200px]">
+        <h2 class="text-5xl">The Tea Cozy</h2>
+        <h5 class="text-2xl">contact@theteacozy.com</h5>
+        <h5 class="text-2xl">917-555-8904</h5>
+      </section>
+    </main>
+    <footer class="relative top-14 p-[20px]">
+      copyright The Tea Cozy 2017
+    </footer>
+  </body>
 </html>
